@@ -17,9 +17,10 @@ public class PauseManager : MonoBehaviour {
             return _paused;
         }
         set {
-            if (FriendlyCar.instance != null && _paused != value) {
+            if (!GameManager.quittingGame && FriendlyCar.instance != null && _paused != value) {
                 _paused = value;
                 Time.timeScale = _paused ? 0f : 1f;
+                PauseCamera.pauseCameraActive = _paused;
             }
         }
     }

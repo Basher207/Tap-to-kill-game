@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour {
         timeForNextSpawn = Mathf.Max (0.1f, 1f * spawningCurve.Evaluate(timeSinceStart / timeForMaxSpawn) * maxSpawnDelta);
 
         float angle = Random.Range(-180f, 180f);
-        float randomDistance = Random.Range(30f, 50f);
+        float randomDistance = Random.Range(50f, 60f);
 
         Vector3 spawnDelta = Quaternion.AngleAxis(angle, Vector3.up) * Vector3.forward * randomDistance;
         Vector3 pos = transform.position + spawnDelta;

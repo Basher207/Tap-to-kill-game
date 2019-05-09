@@ -12,7 +12,7 @@ public class Explosion : MonoBehaviour {
     }
 
     void Update() {
-        if (explosionAnimation.normPosition > 0.1f) {
+        if (explosionAnimation.normPosition > 0.2f) {
             Destroy(this);
             //This assumes that the explosion is a sphere, so .x is the radius
             Collider [] cars = Physics.OverlapSphere(transform.position, explosionAnimation.startScale.x/2f);
