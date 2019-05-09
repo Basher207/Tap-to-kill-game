@@ -13,7 +13,7 @@ public class FriendlyCar : MonoBehaviour {
         }
     }
 
-    Vector2 previousPos;
+    public Vector3 previousPos;
     [HideInInspector] public CarScript carScript;
 
     void Start() {
