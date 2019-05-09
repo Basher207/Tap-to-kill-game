@@ -1,18 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &2817269312655265999
+--- !u!114 &5067784163796487518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7492935287188892082}
+  m_GameObject: {fileID: 839658150513554779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a54564db94c47638741f3897ea4528, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f8123bc6eed04a12803e47c8ea24f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &3335731223595648525
+  carScript: {fileID: 0}
+  carController: {fileID: 0}
+--- !u!1001 &4760785901513349860
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -22,12 +24,12 @@ PrefabInstance:
     - target: {fileID: 5311614428011769791, guid: 6c5b658309f9848c1bca439f7837c8cd,
         type: 3}
       propertyPath: m_Name
-      value: FriendlyNPC Variant
+      value: EnemyCar
       objectReference: {fileID: 0}
     - target: {fileID: 217356938516429456, guid: 6c5b658309f9848c1bca439f7837c8cd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5.64
       objectReference: {fileID: 0}
     - target: {fileID: 217356938516429456, guid: 6c5b658309f9848c1bca439f7837c8cd,
         type: 3}
@@ -37,7 +39,7 @@ PrefabInstance:
     - target: {fileID: 217356938516429456, guid: 6c5b658309f9848c1bca439f7837c8cd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 217356938516429456, guid: 6c5b658309f9848c1bca439f7837c8cd,
         type: 3}
@@ -79,11 +81,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9195270976335914786, guid: 6c5b658309f9848c1bca439f7837c8cd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 184fb471185ff4b6ab9dba8f83579983, type: 2}
+    - target: {fileID: 2604899074494186101, guid: 6c5b658309f9848c1bca439f7837c8cd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.58169353
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604899074494186101, guid: 6c5b658309f9848c1bca439f7837c8cd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.71586
+      objectReference: {fileID: 0}
+    - target: {fileID: 2604899074494186101, guid: 6c5b658309f9848c1bca439f7837c8cd,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.34383088
+      objectReference: {fileID: 0}
+    - target: {fileID: 6168347229566882867, guid: 6c5b658309f9848c1bca439f7837c8cd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 184fb471185ff4b6ab9dba8f83579983, type: 2}
+    m_RemovedComponents:
+    - {fileID: 4224522357833161718, guid: 6c5b658309f9848c1bca439f7837c8cd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6c5b658309f9848c1bca439f7837c8cd, type: 3}
---- !u!1 &7492935287188892082 stripped
+--- !u!1 &839658150513554779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5311614428011769791, guid: 6c5b658309f9848c1bca439f7837c8cd,
     type: 3}
-  m_PrefabInstance: {fileID: 3335731223595648525}
+  m_PrefabInstance: {fileID: 4760785901513349860}
   m_PrefabAsset: {fileID: 0}

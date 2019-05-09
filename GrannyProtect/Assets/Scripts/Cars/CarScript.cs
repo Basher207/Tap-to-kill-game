@@ -14,6 +14,7 @@ public class CarScript : MonoBehaviour {
     [HideInInspector] [Range(-1, 1)] public float torque;
 
     [HideInInspector] public Rigidbody rigidBod;
+    [HideInInspector] public bool dead;
 
 
     void Start() {

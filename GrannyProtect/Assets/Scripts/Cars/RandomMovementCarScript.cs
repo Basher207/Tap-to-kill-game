@@ -11,13 +11,14 @@ public class RandomMovementCarScript : MonoBehaviour {
     void Awake() {
         carScript = GetComponent<CarScript>();
         carController = GetComponent<CarController>();
+        GenerateNewRandomLocation();
     }
     void GenerateNewRandomLocation () {
         targetWorldLocation = new Vector3(Random.Range(-20f, 20f), 0f, Random.Range(-20f, 20f));
         carController.targetWorldLocation = targetWorldLocation;
     }
 
-    void Update() {
+    void FixedUpdate() {
         Vector3 deltaToTarget = targetWorldLocation - transform.position;
         deltaToTarget.y = 0f;
         if (deltaToTarget.magnitude < 2f) {
