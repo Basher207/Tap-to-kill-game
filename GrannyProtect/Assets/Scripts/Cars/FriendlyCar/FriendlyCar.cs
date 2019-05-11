@@ -6,6 +6,9 @@ public class FriendlyCar : MonoBehaviour {
     public static FriendlyCar instance;
     public static float totalDistanceDriven;
     public static float bestDistanceDriven;
+    public static float lastCompleteDistance;
+
+
     public static Vector3 position {
         get {
             if (instance)
@@ -41,5 +44,6 @@ public class FriendlyCar : MonoBehaviour {
     }
     private void OnDestroy() {
         GameManager.EndGame();
+        lastCompleteDistance = totalDistanceDriven;
     }
 }

@@ -7,12 +7,11 @@ public class DistanceTraveledUI : MonoBehaviour {
 
     Text text;
 
-    [Header("Divde the distance by:")] float distanceScale = 100f;
     private void Awake() {
         text = GetComponent<Text>();
     }
     void Update() {
-        float distanceTraveled = FriendlyCar.totalDistanceDriven / distanceScale;
+        float distanceTraveled = FriendlyCar.totalDistanceDriven;
         text.text = "Distance traveled: " + distanceTraveled.ToXDecimalFigures(2).ToString();
     }
 }

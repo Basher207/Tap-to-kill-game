@@ -13,6 +13,6 @@ public class PauseDistancesMenu : MonoBehaviour
     }
 
     void Update() {
-        text.text = "Distance traveled in: \nPrevious attempt:\n" + FriendlyCar.totalDistanceDriven.ToXDecimalFigures(2) + "\nPersonal Best:\n" + FriendlyCar.bestDistanceDriven.ToXDecimalFigures(2);
+        text.text = "Distance traveled in: \nPrevious attempt:\n" + FriendlyCar.lastCompleteDistance.ToXDecimalFigures(2) + "\nPersonal Best:\n" + FriendlyCar.bestDistanceDriven.ToXDecimalFigures(2);
     }
 }
